@@ -201,4 +201,5 @@ A part of the tidy data set table (Note: if you import the file use the argument
 |    1    |      STANDING      |           0.2789176            |           -0.0161376           |
 |    1    |      WALKING       |           0.2773308            |           -0.0173838           |
 |    1    | WALKING DOWNSTAIRS |           0.2891883            |           -0.0099185           |
+|    1    |  WALKING UPSTAIRS  |           0.2554617            |           -0.0239531           |
 ```
