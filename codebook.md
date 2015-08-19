@@ -78,79 +78,109 @@ Assigning names and labels.
 
 - Replace the activities number with their corresponding names.
 
+``` 
+ 1 = WALKING
+ 2 = WALKING_UPSTAIRS
+ 3 = WALKING_DOWNSTAIRS
+ 4 = SITTING
+ 5 = STANDING
+ 6 = LAYING
+```
+
 - Change the descriptive names of the features to  more appropriate names.
+
+```
+t -> time 
+f -> frequency
+Acc -> Accelerometer
+Gyro -> Gyroscope
+Mag -> Magnitude
+BodyBody -> Body
+```
 
 The column names after the transformations (transformed set)
 
 ```
-[1] “subject”
-[2] “timeBodyAccelerometer.mean…X”
-[3] “timeBodyAccelerometer.mean…Y”
-[4] “timeBodyAccelerometer.mean…Z”
-[5] “timeBodyAccelerometer.std…X”
-[6] “timeBodyAccelerometer.std…Y”
-[7] “timeBodyAccelerometer.std…Z”
-[8] “timeGravityAccelerometer.mean…X”
-[9] “timeGravityAccelerometer.mean…Y”
-[10] “timeGravityAccelerometer.mean…Z”
-[11] “timeGravityAccelerometer.std…X”
-[12] “timeGravityAccelerometer.std…Y”
-[13] “timeGravityAccelerometer.std…Z”
-[14] “timeBodyAccelerometerJerk.mean…X”
-[15] “timeBodyAccelerometerJerk.mean…Y”
-[16] “timeBodyAccelerometerJerk.mean…Z”
-[17] “timeBodyAccelerometerJerk.std…X”
-[18] “timeBodyAccelerometerJerk.std…Y”
-[19] “timeBodyAccelerometerJerk.std…Z”
-[20] “timeBodyGyroscope.mean…X”
-[21] “timeBodyGyroscope.mean…Y”
-[22] “timeBodyGyroscope.mean…Z”
-[23] “timeBodyGyroscope.std…X”
-[24] “timeBodyGyroscope.std…Y”
-[25] “timeBodyGyroscope.std…Z”
-[26] “timeBodyGyroscopeJerk.mean…X”
-[27] “timeBodyGyroscopeJerk.mean…Y”
-[28] “timeBodyGyroscopeJerk.mean…Z”
-[29] “timeBodyGyroscopeJerk.std…X”
-[30] “timeBodyGyroscopeJerk.std…Y”
-[31] “timeBodyGyroscopeJerk.std…Z”
-[32] “timeBodyAccelerometerMagnitude.mean..”
-[33] “timeBodyAccelerometerMagnitude.std..”
-[34] “timeGravityAccelerometerMagnitude.mean..”
-[35] “timeGravityAccelerometerMagnitude.std..”
-[36] “timeBodyAccelerometerJerkMagnitude.mean..”
-[37] “timeBodyAccelerometerJerkMagnitude.std..”
-[38] “timeBodyGyroscopeMagnitude.mean..”
-[39] “timeBodyGyroscopeMagnitude.std..”
-[40] “timeBodyGyroscopeJerkMagnitude.mean..”
-[41] “timeBodyGyroscopeJerkMagnitude.std..”
-[42] “frequencyBodyAccelerometer.mean…X”
-[43] “frequencyBodyAccelerometer.mean…Y”
-[44] “frequencyBodyAccelerometer.mean…Z”
-[45] “frequencyBodyAccelerometer.std…X”
-[46] “frequencyBodyAccelerometer.std…Y”
-[47] “frequencyBodyAccelerometer.std…Z”
-[48] “frequencyBodyAccelerometerJerk.mean…X”
-[49] “frequencyBodyAccelerometerJerk.mean…Y”
-[50] “frequencyBodyAccelerometerJerk.mean…Z”
-[51] “frequencyBodyAccelerometerJerk.std…X”
-[52] “frequencyBodyAccelerometerJerk.std…Y”
-[53] “frequencyBodyAccelerometerJerk.std…Z”
-[54] “frequencyBodyGyroscope.mean…X”
-[55] “frequencyBodyGyroscope.mean…Y”
-[56] “frequencyBodyGyroscope.mean…Z”
-[57] “frequencyBodyGyroscope.std…X”
-[58] “frequencyBodyGyroscope.std…Y”
-[59] “frequencyBodyGyroscope.std…Z”
-[60] “frequencyBodyAccelerometerMagnitude.mean..”
-[61] “frequencyBodyAccelerometerMagnitude.std..”
-[62] “frequencyBodyAccelerometerJerkMagnitude.mean..”
-[63] “frequencyBodyAccelerometerJerkMagnitude.std..” 
-[64] “frequencyBodyGyroscopeMagnitude.mean..”
-[65] “frequencyBodyGyroscopeMagnitude.std..”
-[66] “frequencyBodyGyroscopeJerkMagnitude.mean..”
-[67] “frequencyBodyGyroscopeJerkMagnitude.std..”
-[68] “activity”
+[1] â€œsubjectâ€
+[2] â€œtimeBodyAccelerometer.meanâ€¦Xâ€
+[3] â€œtimeBodyAccelerometer.meanâ€¦Yâ€
+[4] â€œtimeBodyAccelerometer.meanâ€¦Zâ€
+[5] â€œtimeBodyAccelerometer.stdâ€¦Xâ€
+[6] â€œtimeBodyAccelerometer.stdâ€¦Yâ€
+[7] â€œtimeBodyAccelerometer.stdâ€¦Zâ€
+[8] â€œtimeGravityAccelerometer.meanâ€¦Xâ€
+[9] â€œtimeGravityAccelerometer.meanâ€¦Yâ€
+[10] â€œtimeGravityAccelerometer.meanâ€¦Zâ€
+[11] â€œtimeGravityAccelerometer.stdâ€¦Xâ€
+[12] â€œtimeGravityAccelerometer.stdâ€¦Yâ€
+[13] â€œtimeGravityAccelerometer.stdâ€¦Zâ€
+[14] â€œtimeBodyAccelerometerJerk.meanâ€¦Xâ€
+[15] â€œtimeBodyAccelerometerJerk.meanâ€¦Yâ€
+[16] â€œtimeBodyAccelerometerJerk.meanâ€¦Zâ€
+[17] â€œtimeBodyAccelerometerJerk.stdâ€¦Xâ€
+[18] â€œtimeBodyAccelerometerJerk.stdâ€¦Yâ€
+[19] â€œtimeBodyAccelerometerJerk.stdâ€¦Zâ€
+[20] â€œtimeBodyGyroscope.meanâ€¦Xâ€
+[21] â€œtimeBodyGyroscope.meanâ€¦Yâ€
+[22] â€œtimeBodyGyroscope.meanâ€¦Zâ€
+[23] â€œtimeBodyGyroscope.stdâ€¦Xâ€
+[24] â€œtimeBodyGyroscope.stdâ€¦Yâ€
+[25] â€œtimeBodyGyroscope.stdâ€¦Zâ€
+[26] â€œtimeBodyGyroscopeJerk.meanâ€¦Xâ€
+[27] â€œtimeBodyGyroscopeJerk.meanâ€¦Yâ€
+[28] â€œtimeBodyGyroscopeJerk.meanâ€¦Zâ€
+[29] â€œtimeBodyGyroscopeJerk.stdâ€¦Xâ€
+[30] â€œtimeBodyGyroscopeJerk.stdâ€¦Yâ€
+[31] â€œtimeBodyGyroscopeJerk.stdâ€¦Zâ€
+[32] â€œtimeBodyAccelerometerMagnitude.mean..â€
+[33] â€œtimeBodyAccelerometerMagnitude.std..â€
+[34] â€œtimeGravityAccelerometerMagnitude.mean..â€
+[35] â€œtimeGravityAccelerometerMagnitude.std..â€
+[36] â€œtimeBodyAccelerometerJerkMagnitude.mean..â€
+[37] â€œtimeBodyAccelerometerJerkMagnitude.std..â€
+[38] â€œtimeBodyGyroscopeMagnitude.mean..â€
+[39] â€œtimeBodyGyroscopeMagnitude.std..â€
+[40] â€œtimeBodyGyroscopeJerkMagnitude.mean..â€
+[41] â€œtimeBodyGyroscopeJerkMagnitude.std..â€
+[42] â€œfrequencyBodyAccelerometer.meanâ€¦Xâ€
+[43] â€œfrequencyBodyAccelerometer.meanâ€¦Yâ€
+[44] â€œfrequencyBodyAccelerometer.meanâ€¦Zâ€
+[45] â€œfrequencyBodyAccelerometer.stdâ€¦Xâ€
+[46] â€œfrequencyBodyAccelerometer.stdâ€¦Yâ€
+[47] â€œfrequencyBodyAccelerometer.stdâ€¦Zâ€
+[48] â€œfrequencyBodyAccelerometerJerk.meanâ€¦Xâ€
+[49] â€œfrequencyBodyAccelerometerJerk.meanâ€¦Yâ€
+[50] â€œfrequencyBodyAccelerometerJerk.meanâ€¦Zâ€
+[51] â€œfrequencyBodyAccelerometerJerk.stdâ€¦Xâ€
+[52] â€œfrequencyBodyAccelerometerJerk.stdâ€¦Yâ€
+[53] â€œfrequencyBodyAccelerometerJerk.stdâ€¦Zâ€
+[54] â€œfrequencyBodyGyroscope.meanâ€¦Xâ€
+[55] â€œfrequencyBodyGyroscope.meanâ€¦Yâ€
+[56] â€œfrequencyBodyGyroscope.meanâ€¦Zâ€
+[57] â€œfrequencyBodyGyroscope.stdâ€¦Xâ€
+[58] â€œfrequencyBodyGyroscope.stdâ€¦Yâ€
+[59] â€œfrequencyBodyGyroscope.stdâ€¦Zâ€
+[60] â€œfrequencyBodyAccelerometerMagnitude.mean..â€
+[61] â€œfrequencyBodyAccelerometerMagnitude.std..â€
+[62] â€œfrequencyBodyAccelerometerJerkMagnitude.mean..â€
+[63] â€œfrequencyBodyAccelerometerJerkMagnitude.std..â€ 
+[64] â€œfrequencyBodyGyroscopeMagnitude.mean..â€
+[65] â€œfrequencyBodyGyroscopeMagnitude.std..â€
+[66] â€œfrequencyBodyGyroscopeJerkMagnitude.mean..â€
+[67] â€œfrequencyBodyGyroscopeJerkMagnitude.std..â€
+[68] â€œactivityâ€
+```
+
+A part of the transformed data set table
+
+```
+| subject | frequencyBodyGyroscopeJerkMagnitude.mean.. | frequencyBodyGyroscopeJerkMagnitude.std.. | activity |
+|:-------:|:------------------------------------------:|:-----------------------------------------:|:--------:|
+|    1    |                 -0.9919904                 |                -0.9906975                 | STANDING |
+|    1    |                 -0.9958539                 |                -0.9963995                 | STANDING |
+|    1    |                 -0.9950305                 |                -0.9951274                 | STANDING |
+|    1    |                 -0.9952207                 |                -0.9952369                 | STANDING |
+|    1    |                 -0.9950928                 |                -0.9954648                 | STANDING |
 ```
 
 Tidy data
@@ -160,7 +190,7 @@ of all of the features of the transformed dataset ordered by subject and activit
 (dimensions of the tidy data set: 180 rows by 68 columns)
 
 
-And a sample of the data in table format.
+A part of the tidy data set table (Note: if you import the file use the argument "header=TRUE")
 
 
 ```
