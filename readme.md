@@ -4,7 +4,7 @@ output:
   html_document: default
 ---
 
-##Notice: This project was submitted two sessions ago but I was not able to finish the course. The work is original and it is mine :)
+###Notice: This project was submitted two sessions ago but I was not able to finish the course. The work is original and it is mine :)
 
 
 ## Overview
