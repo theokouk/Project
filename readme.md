@@ -4,6 +4,9 @@ output:
   html_document: default
 ---
 
+##Notice: This project was submitted two sessions ago but I was not able to finish the course. The work is original and it is mine :)
+
+
 ## Overview
 
 The current project is an implementation of processing and tidying up various related data sets. The final goal is to create a tidy data set which can be used later for exploratory purposes. The core of the project is a script named "run_analysis.R".
